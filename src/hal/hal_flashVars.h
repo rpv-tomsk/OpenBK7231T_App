@@ -9,13 +9,16 @@
 
 /* Fixed size 32 bytes */
 typedef struct ENERGY_METERING_DATA {
+    //float  - 4
+	//long   - 4
+	//time_t - 8
 	float TotalConsumption;
 	float TodayConsumpion;
 	float YesterdayConsumption;
 	long save_counter;
 	float ConsumptionHistory[2];
 	time_t ConsumptionResetTime;
-	unsigned char reseved[3];
+	unsigned char reserved[3];
 	char actual_mday;
 } ENERGY_METERING_DATA;
 
